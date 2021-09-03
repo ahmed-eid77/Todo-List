@@ -1,12 +1,13 @@
 // Selectors
- const body = document.querySelector('body');
+ const addSection = document.querySelector('.add-section');
+ const headerSection = document.querySelector('.header-section');
  const todoInput = document.querySelector(".todo-input");
  const todoButton = document.querySelector(".todo-btn");
  const todoList = document.querySelector(".todo-list");
  const colorButton = document.querySelector(".color-btn");
  const submitColorButton = document.querySelector(".submit-color-btn");
  const noTasks = document.querySelector(".no-tasks");
- const myNodelist = document.querySelectorAll(".no-tasks");
+ 
 
  // Event Listeners
  todoButton.addEventListener('click', addTodo);
@@ -73,5 +74,6 @@ function deleteComplete(e) {
 
 function changeColor(event){
     event.preventDefault();
-    body.style.backgroundColor = colorButton.value;
+    addSection.style.backgroundColor = colorButton.value;
+    headerSection.style.backgroundColor = colorButton.value;
 }
