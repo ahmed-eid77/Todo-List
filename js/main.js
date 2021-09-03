@@ -28,6 +28,7 @@ submitColorButton.addEventListener('click', changeColor);
         todoDiv.appendChild(newTodo);
      }else{
          todoDiv.style.display = "none";
+         alert("Invalid Data. Try Again");
          return;
      }
      // Check Button
