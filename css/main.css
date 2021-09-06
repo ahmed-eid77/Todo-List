@@ -35,33 +35,32 @@ header color-btn {
 
 }
 header .submit-color-btn{
-    border-radius: 25px;
     font-size: small;
     text-align: center;
-    border:0;
-    background-color: #FFF;
-    height: 30px;
-    width: 70px;
-    
+    margin: 2px;
+    color: #FFF;
+    background-color: rgb(141, 5, 57);   
 }
 
 /*========================================*/
 /*============== Add section =============*/
 .add-section {
-    margin: 30px auto;
-    padding: 5px;
     background-color: rgb(47, 164, 179);
-    border-radius: 13px;
+    border-radius: 7px;
 }
 
+.modal-title{
+    color: black;
+}
 .add-section .todo-input{
     margin: 2px;
-    display: inline;
+    
 }
 
-.add-section .todo-btn{
-    margin: 2px;
-    display: inline;
+
+
+.filter {
+    margin-top: 2px ;
 }
 
 /*================================================*/
@@ -86,16 +85,18 @@ header .submit-color-btn{
     align-items: center;
     transition: all 0.5s ease;
 }
+.completed-btn,
+.delete-btn {
+    margin: 0 5PX;
+}
+.completed {
+    
+    opacity: 0.5;
+}
+
 .todo-container .todo-list li {
     flex: 1;
     padding: 2px;
-}
-.todo-container .todo-list .btn{
-    margin: 0 2px;
-}
-.completed {
-    text-decoration: line-through;
-    opacity: 0.5;
 }
 
 .fall {
